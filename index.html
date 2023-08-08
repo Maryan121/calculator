@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f22559516b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="themeSwitcher">
+            <i class="fa-regular fa-moon light icon" id="light"></i>
+            <i class="fa-solid fa-moon dark icon" id="dark"></i>
+    </div>
+    <div class="container">
+        <form>
+            <div class="main-input">
+                <input type="text" name="display" class="display" id="display" value="5">
+            </div>
+            <div class="opts dgrid">
+                <input type="text" value="c" class="greenish clear" readonly>
+                <input type="text" value="del" class="greenish del" readonly>
+                <input type="text" value="." class="greenish dot" readonly>
+                <input type="text" value="/" class="greenish divide" readonly>
+            </div>
+            <div class="dgrid ">
+                <input type="text" value="9" readonly class="nums nine">
+                <input type="text" value="8" readonly class="nums eight">
+                <input type="text" value="7" readonly class="nums seven">
+                <input type="text" value="*" class="greenish multiply" readonly>
+            </div>
+            <div class="dgrid">
+                <input type="text" value="4" readonly class="nums four">
+                <input type="text" value="5" readonly class="nums five">
+                <input type="text" value="6" readonly class="nums six">
+                <input type="text" value="+" class="greenish plus" readonly>
+            </div>
+            <div class="dgrid ">
+                <input type="text" value="1" readonly class="nums one">
+                <input type="text" value="2" readonly class="nums two">
+                <input type="text" value="3" readonly class="nums three">
+                <input type="text" value="-" class="greenish minus" readonly>
+            </div>
+            <div class="dgrid">
+                <input type="text" value="0" readonly class="nums zero">
+                <input type="text" value="=" class="equal greenish" readonly>
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/themeChanger.js"></script>
+
+
+
+</body>
+</html>

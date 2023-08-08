@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Big+Shoulders+Display:wght@200;500;700&family=Commissioner:wght@200;400;500;700&family=DM+Serif+Display&family=Dancing+Script:wght@400;500;700&family=Exo:wght@100&family=Inter:wght@400;500;700;800&family=Josefin+Sans:wght@300&family=Karla:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@300;400;500;700;800&family=Outfit:wght@300;400;600&family=Overpass:wght@300;600&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:wght@300;500;600;700&family=Public+Sans:wght@300;400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,600;1,8..144,300&family=Roboto:wght@400;700;900&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #A599BE;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    width: 77%;
+    background: #D9D3E3;
+    padding: 1.5rem;
+    margin: 3rem auto;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px #D1CADD;
+}
+#display{
+    width: 100%;
+    height: 6vh;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    text-align: right;
+    background: none;
+    color: #533D77;
+    /* color: black; */
+    /* background-color: red; */
+    margin-left: -.6rem;
+}
+
+.dgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    margin-top: 1.4rem;
+}
+.dgrid input{
+    text-align: center;
+    width: 100%;
+    height: 7vh;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background:none;
+    box-shadow: 0px 0px 5px #D1CADD, 1px 1px 10px #533D77;
+    color: #533D77;
+    border-radius: .5rem;
+}
+.dgrid input:hover, .grid input:focus{
+    opacity: .7;
+}
+.equal{
+    grid-column: 2/5;
+}
+
+.dgrid .greenish{
+    color: rgb(102, 148, 34);
+}
+
+/* themes section */
+.themeSwitcher{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+.themeSwitcher .icon{
+    font-size: 1.7rem;
+    box-shadow: 0px 0px 10px #a27fe0, 0px 0px 10px #6E519E;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    color: #DCD7E6;
+}
+.themeSwitcher .icon:hover, .themeSwitcher .icon:focus{
+    opacity: .7;
+}
+#light{
+    display: none;
+}
+
+
+
+@media(min-width:600px){
+    .container{
+        width: 75%;
+    }
+}
+
+
+@media(min-width:810px){
+    .container{
+        width: 40%;
+        margin: 4rem auto;;
+    }
+}
