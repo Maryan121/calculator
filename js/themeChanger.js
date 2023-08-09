@@ -6,6 +6,7 @@ const darkIcon = document.querySelector('.dark')
 
 
 
+//changing the theme into light theme when the lightIcon is clicked
 lightIcon.addEventListener('click',()=>{
     body.style.backgroundColor = '#A599BE'
     container.style.backgroundColor = '#D9D3E3'
@@ -19,14 +20,10 @@ lightIcon.addEventListener('click',()=>{
 })
 
 
-
+//changing the theme into dark theme when the darkIcon is clicked
 darkIcon.addEventListener('click',()=>{
     body.style.backgroundColor = '#6E519E'
-    container.style.backgroundColor = '#533D77'
-    container.style.backgroundColor = '#221536'
-    // body.style.backgroundColor = '#0F000F'
-    // body.style.backgroundColor = '#000'
-    // container.style.backgroundColor = '#000'
+    container.style.backgroundColor = '#221536';
     for(i=0; i<nums.length ; i++){
         nums[i].style.color = '#DCD7E6'
     }
