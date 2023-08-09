@@ -7,6 +7,7 @@ let multiply = document.querySelector('.multiply')
 let plus = document.querySelector('.plus')
 let minus = document.querySelector('.minus')
 let equal = document.querySelector('.equal')
+// let body = document.querySelector('body')
 //numbers
 let zero = document.querySelector('.zero')
 let one = document.querySelector('.one')
@@ -55,5 +56,33 @@ nine.addEventListener('click',function(){
 clear.addEventListener('click',function(){
     display.value = ''
 })
+dot.addEventListener('click',function(){
+    display.value = display.value += '.'
+})
+plus.addEventListener('click',function(){
+    display.value = display.value += '+'
+})
+minus.addEventListener('click',function(){
+    display.value = display.value += '-'
+})
+multiply.addEventListener('click',function(){
+    display.value = display.value += '*'
+})
+divide.addEventListener('click',function(){
+    display.value = display.value += '/'
+})
 
+
+equal.addEventListener('click',()=>{
+    display.value = eval(display.value);
+    
+})
+
+del.addEventListener('click',() =>{
+    const currentValue = display.value;
+    if(currentValue.length > 0){
+        const newValue = currentValue.slice(0, -1)
+        display.value = newValue;
+    }
+})
 

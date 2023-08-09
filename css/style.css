@@ -81,6 +81,12 @@ body{
 #light{
     display: none;
 }
+.darkColor{
+    color: #533D77;
+}
+.lightColor{
+    color:#DCD7E6
+}
 
 
 

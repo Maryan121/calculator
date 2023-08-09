@@ -23,6 +23,10 @@ lightIcon.addEventListener('click',()=>{
 darkIcon.addEventListener('click',()=>{
     body.style.backgroundColor = '#6E519E'
     container.style.backgroundColor = '#533D77'
+    container.style.backgroundColor = '#221536'
+    // body.style.backgroundColor = '#0F000F'
+    // body.style.backgroundColor = '#000'
+    // container.style.backgroundColor = '#000'
     for(i=0; i<nums.length ; i++){
         nums[i].style.color = '#DCD7E6'
     }
