@@ -20,13 +20,40 @@ let eight = document.querySelector('.eight')
 let nine = document.querySelector('.nine')
 let ten = document.querySelector('.ten')
 
+zero.addEventListener('click',()=>{
+    display.value += '0'
+})
+
 one.addEventListener('click',()=>{
-    display.value = '1'
-    console.log('one')
+    display.value += '1'
 })
 two.addEventListener('click',function(){
-    display.value = two.value
-    console.log('two')
+    display.value = display.value += '2'
+})
+three.addEventListener('click',function(){
+    display.value = display.value += '3'
+})
+four.addEventListener('click',function(){
+    display.value = display.value += '4'
+})
+five.addEventListener('click',function(){
+    display.value = display.value += '5'
+})
+six.addEventListener('click',function(){
+    display.value = display.value += '6'
+})
+seven.addEventListener('click',function(){
+    display.value = display.value += '7'
+})
+eight.addEventListener('click',function(){
+    display.value = display.value += '8'
+})
+nine.addEventListener('click',function(){
+    display.value = display.value += '9'
+})
+
+clear.addEventListener('click',function(){
+    display.value = ''
 })
 
 
