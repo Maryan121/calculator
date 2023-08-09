@@ -91,6 +91,7 @@ clear.addEventListener('click',function(){
 */ 
 equal.addEventListener('click',()=>{
     display.value = eval(display.value);
+    display.classList.add('shaking-element')
     
 })
 
@@ -102,4 +103,10 @@ del.addEventListener('click',() =>{
         display.value = newValue;
     }
 })
+
+// allowing only numbers
+display.addEventListener('input', function() {
+    const inputValue = display.value;
+    display.value = inputValue.replace(/\D/g, ''); // Removing non-digit characters
+  });
 
